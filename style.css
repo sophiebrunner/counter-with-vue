@@ -15,7 +15,6 @@
 
 body {
   overflow: hidden;
-  border: 1px solid pink;
 }
 
 h1 {
@@ -23,11 +22,9 @@ h1 {
 }
 
 main {
-  --progress: 0%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
   background-image: linear-gradient(
     to right,
     var(--clr-accent),
