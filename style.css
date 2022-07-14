@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: monospace;
+  font-size: 20px;
+  line-height: 3rem;
+  --clr-accent: rgb(255, 209, 49);
+}
+
+body {
+  overflow: hidden;
+  border: 1px solid pink;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+main {
+  --progress: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-image: linear-gradient(
+    to right,
+    var(--clr-accent),
+    var(--clr-accent)
+  );
+  background-size: var(--progress) 100%;
+  background-repeat: no-repeat;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 1.5em;
+  background-color: var(--clr-accent);
+}
+
+#app {
+  border: 1px solid green;
+  display: grid;
+  grid-template-rows: 30% 70%;
+  height: 100vh;
+}
+
+#reset-button {
+  padding: 0.5em 1.5em;
+  border: 2px solid black;
+  font-family: monospace;
+  font-size: 1.5rem;
+  box-shadow: 6px 6px rgb(233, 233, 233);
+}
+
+#counting-number {
+  font-size: 6rem;
+}
